@@ -20,9 +20,9 @@ buttonValidation.addEventListener("click", function(){
     }
 
     if (checkingMail = true){
-        resultEmail.innerHTML += "La mail è esistente"
+        console.log("La mail è esistente")
     } else {
-        resultEmail.innerHTML += "La mail non è esistente" 
+        console.log("La mail non è esistente") 
     }
     
 })
