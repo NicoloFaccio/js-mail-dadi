@@ -7,11 +7,13 @@ const resultEmail=document.getElementById("result");
 const emails = ["figliouno@gmail.com", "figliodue@gmail.com", "figliotre@gmail.com", "figlioquattro@gmail.com", "figliocinue@gmail.com"]
 
 //FUNCTION'S SECTION
+let checkingMail = false;
 
 buttonValidation.addEventListener("click", function(){
     console.log(validationNameHtml.value)
 
-    let checkingMail = false
+    let emailValidation = validationNameHtml.value
+
 
     for( let i = 0; i < emails.length; i++ ){
         if(emails[i]==="figliouno@gmail.com"){
@@ -22,9 +24,8 @@ buttonValidation.addEventListener("click", function(){
     if (checkingMail = true){
         console.log("La mail è esistente")
         resultEmail.innerHTML = ("La mail è esistente")
-    } else if (checkingMail = false) {
+    } else {
         console.log("La mail non è esistente") 
         resultEmail.innerHTML = ("La mail non è esistente")
-    }
-    
+    }  
 })

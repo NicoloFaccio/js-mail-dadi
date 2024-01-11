@@ -18,6 +18,6 @@ if (computer > gamer){
     randomWinner.innerHTML=("Il computer ha vinto")
 } else if (computer < gamer) {
     randomWinner.innerHTML=("Il giocatore ha vinto")
-} else if (computer === gamer) {
+} else {
     randomWinner.innerHTML=("Ricaricare la pagina")
 }
